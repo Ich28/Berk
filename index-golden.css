@@ -103,9 +103,9 @@ nav h1 {
 }
 
 main {
-    height: 47.5vw;
+    height: auto;
     background-color: transparent;
-    width: 40%;
+    width: 60%;
     flex: 1;
     background-image: url(2955059202416821316.png);
     background-repeat: no-repeat;
@@ -115,9 +115,10 @@ main {
 
 main div {
     display: flex;
-    height: 20vw;
-    margin: 2%;
+    height: auto;
+    flex: 1;
 }
+  
 
 h1 {
     font-family: "berserk";
@@ -130,6 +131,12 @@ h1 {
     width: 50%;
     text-align: center;
     transition: 1s;
+}
+
+main div div {
+    flex: 1;
+    margin: 5%;
+    margin-bottom: 2%;
 }
 
 main div div:hover {
@@ -147,28 +154,29 @@ main div div:hover {
 img {
     border-radius: 0.8vw;
 }
+
 #img1 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 #img2 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 #img3 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 #img4 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 
@@ -181,9 +189,6 @@ footer {
     text-align: right;
     animation: shake 5;
     animation-iteration-count: infinite;
-    @keyframes shake {
-        
-    }
 }
 
 #behelit {
