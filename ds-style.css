@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
 }
+
 @media only screen and (max-width: 600px) {
     body main {
         width: 90%;
@@ -24,13 +25,18 @@
         font-family: "berserk";
         font-size: 20px;
         color: white;
-        display: inline;
+        display: block;
     }
     
     body nav div {
-        margin:50px;
+        margin: 50px;
     }
-    
+
+    body nav #art {
+        border-bottom: solid rgb(68, 0, 0) 2px;
+        border-top: solid rgb(68, 0, 0) 2px;
+    }
+
     body main p {
         font-size: 18px;
     }
@@ -106,16 +112,17 @@ nav, main, footer {
         opacity: 100%;
     }
 }
+
 nav {
     text-align: center;
     background-color: black;
-    display: flex;
     width: 80%;
     border-bottom: solid rgb(68, 0, 0) 2px;
 }
 
 nav div {
     flex: 1;
+    display: flex;
     margin-bottom: 1vw;
 }
 
@@ -168,7 +175,7 @@ main p {
 #fl {
     float: left;
     border-radius: 2%;
-    margin-right: 3%;
+    margin: 4%;
     width: 20%;
 }
 

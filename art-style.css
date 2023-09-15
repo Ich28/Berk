@@ -3,8 +3,8 @@
 }
 @media only screen and (max-width: 600px) {
     body main {
-        width: 80%;
-        height: 1200px;
+        width: 90%;
+        height: 800px;
         background-position: 50% center;
     }
 
@@ -39,6 +39,11 @@
     body main div div {
         border: solid rgb(97, 1, 1) 1px;
     }
+
+    body main div div .text p {
+        margin-top: 2%;
+    }
+
     .d:active {
         border: solid red 2px;
     }
@@ -61,12 +66,6 @@ header {
     background-color: black;
     text-align: center;
     width: 100%; 
-}
-
-#bar {
-    color: red;
-    font-size: 5vw;
-    z-index: 1;
 }
 
 body {

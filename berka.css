@@ -43,11 +43,11 @@
         height: 200px;
     }
 
-    body nav div #art {
+    body nav #art {
         border-bottom: solid rgb(68, 0, 0) 2px;
         border-top: solid rgb(68, 0, 0) 2px;
     }
-
+    
     main #demo {
         width: 100%;
     }

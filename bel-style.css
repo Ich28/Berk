@@ -20,6 +20,11 @@
         color: white;
     }
 
+    body nav #art {
+        border-bottom: solid rgb(68, 0, 0) 2px;
+        border-top: solid rgb(68, 0, 0) 2px;
+    }
+
     body nav{
         font-family: "berserk";
         font-size: 20px;
@@ -30,22 +35,17 @@
     body nav div {
         margin: 50px;
     }
-    
+
     body main p {
         font-size: 18px;
     }
 
     body main #b1 {
-        height: 300px;
+        height: 400px;
     }
 
     body main #b2 {
         height: 200px;
-    }
-
-    body nav div #art {
-        border-bottom: solid rgb(68, 0, 0) 2px;
-        border-top: solid rgb(68, 0, 0) 2px;
     }
 
     main #fl {
@@ -113,13 +113,14 @@ nav, main, footer {
 nav {
     text-align: center;
     background-color: black;
-    display: flex;
     width: 80%;
+    display: flex;
     border-bottom: solid rgb(68, 0, 0) 2px;
 }
 
 nav div {
     flex: 1;
+    display: flex;
     margin-bottom: 1vw;
 }
 
