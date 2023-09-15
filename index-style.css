@@ -1,0 +1,190 @@
+* {
+    margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+    body main {
+        width: 80%;
+        height: 600px;
+        background-position: 50% center;
+    }
+
+    body main div img {
+        height: 120px;
+    } 
+
+    body header img {
+        height: 200px;
+    }
+
+    body main div {
+        margin-bottom: 200px;
+        flex: 1;
+    }
+
+    body main div div h1{
+        font-size: 20px;
+    }
+
+    main div div a #img1{
+        height: 40vw;
+        width: 80%;
+    }
+
+    main div div a #img2{
+        height: 40vw;
+    }
+
+    main div div a #img3{
+        height: 40vw;
+    }
+
+    main div div a #img4{
+        height: 40vw;
+    }
+    
+    body nav h1 {
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+    }
+    
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    width: 100%; 
+}
+
+body {
+    background-color:  black;
+}
+@font-face {
+    font-family: "berserk";
+    src: url("Berserker-Regular.ttf");
+}
+
+nav, main, footer {
+    animation-name: op;
+    animation-duration: 2s;
+}
+
+@keyframes op {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+nav {
+    text-align: center;
+    background-color: black;
+}
+
+nav h1 {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+}
+
+main {
+    height: 47.5vw;
+    background-color: transparent;
+    width: 40%;
+    flex: 1;
+    background-image: url(2680447.webp);
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+main div {
+    display: flex;
+    height: 20vw;
+    margin: 2%;
+}
+
+h1 {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+}
+
+.d1 {
+    display: inline;
+    width: 50%;
+    text-align: center;
+    transition: 1s;
+}
+
+main div div:hover {
+    transform: scale(1.2);
+    cursor: default;
+    z-index: 999;
+}
+
+.d2 {
+    display: inline;
+    text-align: center;
+    width: 50%;
+    transition: 1s;
+}
+
+img {
+    border-radius: 0.8vw;
+}
+
+#img1 {
+    width: 80%;
+    transition: 1s;
+    height: auto;
+}
+
+#img2 {
+    width: 80%;
+    transition: 1s;
+    height: auto;
+}
+
+#img3 {
+    width: 80%;
+    transition: 1s;
+    height: auto;
+}
+
+#img4 {
+    width: 80%;
+    transition: 1s;
+    height: auto;
+}
+
+
+footer {
+    background-color: black;
+    height: 10vw;
+}
+
+#behelt {
+    text-align: right;
+}
+
+#behelit {
+    animation-name: behelit;
+    margin-left: 2vw;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    margin-left: 2vw;
+}
+
+@keyframes behelit {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(-45deg); 
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
