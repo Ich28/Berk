@@ -17,7 +17,7 @@
     }
 
     body main div {
-        margin-bottom: 200px;
+        margin-bottom: 20px;
         flex: 1;
     }
 
@@ -26,20 +26,23 @@
     }
 
     main div div a #img1{
-        height: 40vw;
-        width: 80%;
+        height: 200px;
+        width: 100%;
     }
 
     main div div a #img2{
-        height: 40vw;
+        height: 200px;
+        width: 100%;
     }
 
     main div div a #img3{
-        height: 40vw;
+        height: 200px;
+        width: 100%;
     }
 
     main div div a #img4{
-        height: 40vw;
+        height: 200px;
+        width: 100%;
     }
     
     body nav h1 {
@@ -89,19 +92,18 @@ nav h1 {
 }
 
 main {
-    height: 47.5vw;
+    height: auto;
     background-color: transparent;
-    width: 40%;
-    flex: 1;
+    width: 60%;
     background-image: url(2680447.webp);
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center 25%; 
 }
 
 main div {
     display: flex;
-    height: 20vw;
-    margin: 2%;
+    height: auto;
+    flex: 1;
 }
 
 h1 {
@@ -115,6 +117,12 @@ h1 {
     width: 50%;
     text-align: center;
     transition: 1s;
+}
+
+main div div {
+    flex: 1;
+    margin: 5%;
+    margin-bottom: 2%;
 }
 
 main div div:hover {
@@ -135,27 +143,27 @@ img {
 }
 
 #img1 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 #img2 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 #img3 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 #img4 {
-    width: 80%;
+    width: 100%;
     transition: 1s;
-    height: auto;
+    height: 28vw;
 }
 
 
