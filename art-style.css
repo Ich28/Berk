@@ -4,7 +4,7 @@
 @media only screen and (max-width: 600px) {
     body main {
         width: 90%;
-        height: 1000px;
+        height: auto;
         background-position: 50% center;
     }
 
@@ -34,6 +34,7 @@
     body main div {
         display: inline;
         border: none;
+        height: auto;
     }
 
     body main div div {
@@ -42,6 +43,10 @@
 
     body main div div .text p {
         margin-top: 2%;
+    }
+
+    body main div div .img img {
+        height: 150px;
     }
 
     .d:active {
