@@ -4,21 +4,33 @@
 @media only screen and (max-width: 600px) {
     body main {
         width: 80%;
-        height: 600px;
+        height: auto;
         background-position: 50% center;
     }
-
-    body main div img {
-        height: 120px;
-    } 
 
     body header img {
         height: 200px;
     }
 
     body main div {
-        margin-bottom: 20px;
+        display: inline;
         flex: 1;
+        margin-bottom: 20%; 
+    }
+
+    body main div div {
+        flex: 1;
+        margin-bottom: 20%; 
+    }
+
+    main div div a {
+        text-align: center;
+        margin-left: 20.5%;
+    }
+
+    body main div div {
+        text-align: center;
+        margin-right: 20%;
     }
 
     body main div div h1{
@@ -26,23 +38,23 @@
     }
 
     main div div a #img1{
-        height: 200px;
-        width: 100%;
+        height: 250px;
+        width: 60%;
     }
 
     main div div a #img2{
-        height: 200px;
-        width: 100%;
+        height: 250px;
+        width: 60%;
     }
 
     main div div a #img3{
-        height: 200px;
-        width: 100%;
+        height: 250px;
+        width: 60%;
     }
 
     main div div a #img4{
-        height: 200px;
-        width: 100%;
+        height: 250px;
+        width: 60%;
     }
     
     body nav h1 {
