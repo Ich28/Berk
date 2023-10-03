@@ -60,40 +60,32 @@
     body nav h1 {
         font-family: "berserk";
         font-size: 20px;
-        color: white;
+        color: rgb(0, 0, 0);
     }    
 }
 
 header {
     background-color: transparent;
-    text-align: center;
+    height: 25vh;
     width: 100%; 
+    display: flex;
+    align-items: center;
+    z-index: 1;
 }
 
 body {
     background-image: radial-gradient(gold, rgb(112, 95, 1));
 }
+
 @font-face {
     font-family: "berserk";
     src: url("Berserker-Regular.ttf");
 }
 
-nav, main, footer {
-    animation-name: op;
-    animation-duration: 2s;
-}
-
-@keyframes op {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
 nav {
     text-align: center;
     background-color: transparent;
+    visibility: hidden;
 }
 
 nav h1 {
@@ -103,10 +95,9 @@ nav h1 {
 }
 
 main {
-    height: auto;
+    opacity: 0%;
     background-color: transparent;
     width: 60%;
-    flex: 1;
     background-image: url(2955059202416821316.png);
     background-repeat: no-repeat;
     background-position: 49% 49%;
@@ -117,8 +108,7 @@ main div {
     display: flex;
     height: auto;
     flex: 1;
-}
-  
+}  
 
 h1 {
     font-family: "berserk";
@@ -183,6 +173,7 @@ img {
 footer {
     background-color: transparent;
     height: 10vw;
+    opacity: 0%;
 }
 
 #behelt {
@@ -197,6 +188,44 @@ footer {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
+
+
+
+@keyframes anim {
+    0% {
+        height: 100vh;
+        position: fixed;
+    }
+
+    30% {
+        height: 100vh;
+        position: fixed;
+    }
+
+    100% {
+        height: 25vh;
+        position: fixed;
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;    
+}
+}
+
+@keyframes nave {
+    0%{
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
 @keyframes behelit {
     0% {
         transform: rotate(45deg);

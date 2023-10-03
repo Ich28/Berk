@@ -1,0 +1,196 @@
+* {
+    margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+    body main {
+        width: 90%;
+        height: auto;
+        background-image: none;
+        background-color: black;
+    }
+
+    body nav h1 {
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+    }
+
+    body nav a {
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+    }
+
+    body nav{
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+    }
+    
+    body nav div {
+        margin:50px;
+        display: block;
+    }
+
+    body main div {
+        display: flex;
+    }
+
+    body main div div {
+        border: solid rgb(97, 1, 1) 1px;
+    }
+
+    body main div div img {
+        height: 800px;
+    }
+
+    .d:active {
+        border: solid red 2px;
+    }
+
+    body main p {
+        font-size: 18px;
+    }
+    
+    body main a {
+        font-size: 14px;
+    }
+
+    body nav #art {
+        border-bottom: solid rgb(68, 0, 0) 2px;
+        border-top: solid rgb(68, 0, 0) 2px;
+    }
+
+    body main.img img:hover {
+        height: 0%;
+        transform: none;
+    }
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    width: 100%; 
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "berserk";
+    src: url("Berserker-Regular.ttf");
+}
+
+nav, main, footer {
+    animation-name: op;
+    animation-duration: 2s;
+}
+
+@keyframes op {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    width: 80%;
+    border-bottom: solid rgb(68, 0, 0) 2px;
+}
+
+nav div {
+    flex: 1;
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+nav h1 {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;  
+}
+
+nav a {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    height: auto;
+    background-color: transparent;
+    width: 80%;
+    flex: 1;
+    background-image: url(image.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+main p {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;
+}
+
+main h1 {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;  
+}
+
+main a {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#intro {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+#cat {
+    text-align: left;
+}
+main div {
+    height: auto;
+    display: flex;
+    flex: 1;
+}
+
+main div div {
+    display: block;
+    border: solid rgb(68, 0, 0) 2px;
+    margin: 5%;
+    transition: 1s;
+}
+
+main div div:hover {
+    transform: scale(1.05);
+}
+
+
+main div div div {
+    text-align: center;
+    border: none;
+    margin: 0%;
+}
+
+main div div div img {
+    height: 25vw;
+}
+footer {
+    background-color: black;
+    height: 10vw;
+}

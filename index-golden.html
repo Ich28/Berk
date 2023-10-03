@@ -10,16 +10,16 @@
         <source src="ytmp3-convert.com_320kbps-tell-me-why-berserk-opening-full-1997-karaoke.mp3" type="audio/mpeg">
     </audio>
 </head>
-<body>
-    <header>
+<body onload="ani()">
+    <header id="head">
         <img src="Berserk_anime_logo.png">
     </header>
-    <nav>
+    <nav id="nav">
         <h1>
             A era dourada
         </h1>
     </nav>
-    <main>
+    <main id="main">
         <div>
             <div class="d1">
                 <h1>
@@ -58,10 +58,49 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="fot">
         <a href="index.html" id="behelt">
             <img src="heo07kx8wug81.gif" id="behelit">
         </a>
     </footer>
 </body>
+<script>
+    function ani() {
+        const hed = document.getElementById("head")
+
+        hed.style.animationName = "anim"
+        hed.style.animationDuration = "3s"
+        hed.style.animationIterationCount = "1"
+        hed.addEventListener("animationend", ani2)
+        hed.addEventListener("animationend", nav)
+    }
+    function ani2() {
+        window.scrollTo(0, 0)
+        const man = document.getElementById("main")
+        const fot = document.getElementById("fot")        
+        
+        man.style.animationName = "ani2"
+        fot.style.animationName = "ani2"
+
+        man.style.animationDuration = "3s"
+        fot.style.animationDuration = "3s"
+
+        man.style.animationFillMode = "forwards"
+        fot.style.animationFillMode = "forwards"
+
+        man.style.animationIterationCount = "1"
+        fot.style.animationIterationCount = "1"
+    }
+    function nav(){
+        const nav = document.getElementById("nav")
+        nav.style.animationName = "nave"
+        nav.style.animationDuration = "1s"
+        nav.style.animationFillMode = "forwards"
+        nav.style.animationIterationCount = "1"
+
+    }
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0)
+    }
+</script>
 </html>
