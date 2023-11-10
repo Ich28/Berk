@@ -52,6 +52,18 @@
     body main p {
         font-size: 18px;
     }
+
+    body main li {
+        font-size: 18px;
+    }
+
+    body main #ga {
+        display: block;
+    }
+
+    body main #da {
+        display: block;
+    }
     
     body main a {
         font-size: 14px;
@@ -111,9 +123,6 @@ nav div {
     margin-bottom: 1vw;
 }
 
-#p {
-    align-items: center;
-}
 
 nav h1 {
     font-family: "berserk";
@@ -143,6 +152,8 @@ main p {
     font-size: 1.8vw;
     color: white;
     text-align: center;
+    text-indent: 2%;
+    margin: 2%;
 }
 
 main h1 {
@@ -160,45 +171,43 @@ main a {
     text-decoration: none;
 }
 
-#intro {
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-}
-
-#cat {
-    text-align: left;
-}
-
-main div {
-    height: auto;
+#ga {
+    background-color: rgb(138, 99, 0);
     display: flex;
-    flex: 1;
 }
 
-main div div {
-    display: block;
-    border: solid rgb(68, 0, 0) 2px;
-    margin: 5%;
-    transition: 1s;
-
+main li {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    margin: 2%;
 }
 
-main div div:hover {
-    transform: scale(1.05);
+#falco {
+    height: 20vw;
 }
 
-
-main div div div {
-    text-align: center;
-    border: none;
-    margin: 0%;
+div p {
+    color: black;
 }
 
-main div div div img {
-    height: 25vw;
+#da {
+    background-color: rgb(0, 0, 0);
+    display: flex;
 }
 
+#brando {
+    height: 20vw;
+}
+
+#da p{
+    color: white;
+}
 footer {
     background-color: black;
     height: 10vw;
+}
+
+#bandeira {
+    height: 30px;
 }

@@ -1,0 +1,269 @@
+* {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body main {
+        width: 90%;
+        height: 600px;
+        background-position: 50% center;
+    }
+
+    body nav h1 {
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+    }
+
+    body nav a {
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+    }
+
+    body nav{
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+        display: block;
+    }
+    
+    body nav div {
+        margin: 50px;
+    }
+
+    body nav div #art {
+        border-bottom: solid rgb(68, 0, 0) 2px;
+        border-top: solid rgb(68, 0, 0) 2px;
+    }
+
+    body main p {
+        font-size: 18px;
+    }
+
+    body main h1 {
+        font-family: "berserk";
+        font-size: 20px;
+        color: white;
+    }  
+    
+    main .fl {
+        text-align: center;
+        border-radius: 2%;
+        width: 25%;
+        text-align: center;
+        margin: 28%;
+    }
+    
+    main .fl img {
+        border-radius: 2%;
+        height: 200px;
+        border: solid rgb(68, 0, 0) 6px;
+    }
+
+    main .fr {
+        text-align: center;
+        border-radius: 2%;
+        margin-right: 28%;
+        width: 25%;
+    }
+    
+    main .fr img {
+        border-radius: 2%;
+        height: 200px;
+        border: solid rgb(68, 0, 0) 6px;
+        text-align: center;
+        margin: 2%;
+    }
+
+    body main #ficha {
+        width: 80%;
+        float: none;
+    }
+
+    body main #ficha img {
+        height: 150px;
+    }
+
+    body main #ficha h1 {
+        font-size: 10px;
+    }
+
+    body main #ficha p {
+        font-size: 10px;
+    }
+
+    body main .fr figcaption {
+        text-align: justify;
+    }
+
+    body main .fl figcaption {
+        text-align: justify;
+    }
+
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    width: 100%; 
+}
+
+body {
+    background-color:  black;
+}
+
+@font-face {
+    font-family: "berserk";
+    src: url("Berserker-Regular.ttf");
+}
+
+nav, main, footer {
+    animation-name: op;
+    animation-duration: 2s;
+}
+
+@keyframes op {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    width: 80%;
+    border-bottom: solid rgb(68, 0, 0) 2px;
+    display: flex;
+}
+
+nav div {
+    flex: 1;
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+#p {
+    align-items: center;
+}
+
+nav h1 {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: rgb(255, 0, 0);
+}
+
+nav a {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 8vw;
+    padding: 2%;
+    height: auto;
+}
+
+main h1 {
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;
+}
+
+main p {
+    text-indent: 5%;
+    font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-align: justify;
+    margin: 8%;
+}
+
+#ficha {
+    height: auto;
+    width: 25%;
+    float: right;
+    border: solid darkred 2px;
+    margin: 8%;
+    text-align: center;
+}
+
+#ficha img {
+    margin: 2%;
+    height: 25vw;
+}
+
+#ficha p {
+    font-size: 1vw;
+}
+
+#ficha h1 {
+    font-size: 1vw;
+}
+
+.ficha1 {
+    display: flex;
+    border: solid darkred 2px;
+    height: auto;
+}
+
+.pre {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(38, 0, 0)
+}
+
+.pos{
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+#potb {
+    display: block;
+}
+
+.fl {
+    float: left;
+    border-radius: 2%;
+    margin-right: 3%;
+    width: 20%;
+}
+
+.imgl {
+    border-radius: 2%;
+    height: 20vw;
+    border: solid rgb(68, 0, 0) 6px;
+    text-align: center;
+}
+
+.fr {
+    float: right;
+    border-radius: 2%;
+    margin-left: 3%;
+    width: 20%;
+}
+
+.imgr {
+    border-radius: 2%;
+    height: 20vw;
+    border: solid rgb(68, 0, 0) 6px;
+    text-align: center;
+}
+
+figcaption {
+    font-family: "berserk";
+    color: white;
+    text-align: center;
+}
+
+#bandeira {
+    height: 30px;
+}
