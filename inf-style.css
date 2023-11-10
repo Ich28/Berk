@@ -4,8 +4,9 @@
 @media only screen and (max-width: 600px) {
     body main {
         width: 90%;
-        height: 600px;
-        background-position: 50% center;
+        height: auto;
+        background-image: none;
+        background-color: black;
     }
 
     body nav h1 {
@@ -20,64 +21,50 @@
         color: white;
     }
 
-    body nav .art {
-        border-bottom: solid rgb(68, 0, 0) 2px;
-        border-top: solid rgb(68, 0, 0) 2px;
-    }
-
     body nav{
         font-family: "berserk";
         font-size: 20px;
         color: white;
-        display: block;
     }
     
     body nav div {
-        margin: 50px;
+        margin:50px;
+        display: block;
+    }
+
+    body main div {
+        display: flex;
+    }
+
+    body main div div {
+        border: solid rgb(97, 1, 1) 1px;
+    }
+
+    body main div div .img {
+        height: 128px;
+
+    }
+
+    .d:active {
+        border: solid red 2px;
     }
 
     body main p {
         font-size: 18px;
     }
-
-    body main #b1 {
-        height: 400px;
+    
+    body main a {
+        font-size: 14px;
     }
 
-    body main #b2 {
-        height: 200px;
-    }
-
-    main #fl {
-        float: left;
-        width: 50%;
-        margin: 4%;
-        border-radius: 2%;
-        border-right: solid rgb(68, 0, 0) 2px;
+    body nav .art {
         border-bottom: solid rgb(68, 0, 0) 2px;
+        border-top: solid rgb(68, 0, 0) 2px;
     }
-    
-    main #fl img {
-        height: 200px;
-    }
-    
-    main #fr {
-        float: right;
-        width: 50%;
-        margin: 4%;
-        border-radius: 2%;
-        border-left: solid rgb(68, 0, 0) 2px;
-        border-bottom: solid rgb(68, 0, 0) 2px;
-    }
-    
-    main #fr img {
-        height: 200px;
-    }
-    
-    figcaption {
-        font-family: "berserk";
-        color: white;
-        align-items: center;
+
+    body main.img img:hover {
+        height: 0%;
+        transform: none;
     }
 }
 
@@ -88,7 +75,7 @@ header {
 }
 
 body {
-    background-color:  black;
+    background-color: black;
 }
 
 @font-face {
@@ -114,19 +101,16 @@ nav {
     text-align: center;
     background-color: black;
     width: 80%;
-    display: flex;
     border-bottom: solid rgb(68, 0, 0) 2px;
+    
 }
 
 nav div {
     flex: 1;
-    display: flex;
+    display: block;
     margin-bottom: 1vw;
 }
 
-#p {
-    align-items: center;
-}
 
 nav h1 {
     font-family: "berserk";
@@ -142,43 +126,39 @@ nav a {
 }
 
 main {
-    margin-top: 8vw;
-    padding: 2%;
+    height: auto;
+    background-color: transparent;
+    width: 80%;
+    flex: 1;
+    background-image: url(image.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 main p {
-    text-indent: 5%;
     font-family: "berserk";
     font-size: 1.8vw;
     color: white;
-    text-align: justify;
-    margin: 8vw;
+    text-align: left;
+    text-indent: 2%;
+    margin: 2%;
 }
 
-#fl {
-    float: left;
-    border-radius: 2%;
-    width: 20%;
-}
-
-#fl img {
-    height: 15vw;
-    text-align: center;
-}
-
-#fr {
-    float: right;
-    width: 20%;
-}
-
-#fr img {
-    border-radius: 2%;
-    height: 26vw;
-    text-align: center;
-}
-
-figcaption {
+main h1 {
     font-family: "berserk";
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;  
+}
+
+main a {
+    font-family: "berserk";
+    font-size: 1.8vw;
     color: white;
     text-align: center;
+    text-decoration: none;
+}
+footer {
+    background-color: black;
+    height: 10vw;
 }

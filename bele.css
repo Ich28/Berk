@@ -20,7 +20,7 @@
         color: white;
     }
 
-    body nav #art {
+    body nav .art {
         border-bottom: solid rgb(68, 0, 0) 2px;
         border-top: solid rgb(68, 0, 0) 2px;
     }
@@ -150,10 +150,14 @@ nav div {
     margin-bottom: 1vw;
 }
 
+#p {
+    align-items: center;
+}
+
 nav h1 {
     font-family: "berserk";
     font-size: 1.8vw;
-    color: white;
+    color: rgb(255, 0, 0);
 }
 
 nav a {
@@ -185,7 +189,7 @@ main h1 {
     margin: 2%w; 
 }
 
-#fl {
+.fl {
     float: left;
     border-radius: 2%;
     width: 20%;
@@ -193,26 +197,26 @@ main h1 {
     box-sizing: border-box;
 }
 
-#fl img {
+.fl img {
     height: 16vw;
     text-align: center;
     border: none;
     
 }
 
-#fr {
+.fr {
     float: right;
     width: 20%;
     margin: 2%;
 }
 
-#fr img {
+.fr img {
     border-radius: 2%;
     height: 15vw;
     text-align: center;
 }
 
-#fem{
+.fem{
     border: solid rgb(68, 0, 0) 6px;
 }
 

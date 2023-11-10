@@ -73,6 +73,8 @@ header {
     display: flex;
     align-items: center;
     z-index: 1;
+    margin-top: 4%;
+    margin-bottom: 2%;
 }
 
 body {
@@ -83,11 +85,6 @@ body {
 @font-face {
     font-family: "berserk";
     src: url("Berserker-Regular.ttf");
-}
-
-nav {
-    text-align: center;
-    background-color: black;
 }
 
 nav h1 {
@@ -121,7 +118,7 @@ h1 {
     display: inline;
     width: 50%;
     text-align: center;
-    transition: 1s;
+    transition: 1s ease;
 }
 
 main div div {
@@ -217,8 +214,9 @@ audio::-webkit-media-controls-play-button {
     }
     100% {
         opacity: 100%;    
+    }
 }
-}
+
 
 @keyframes behelit {
     0% {

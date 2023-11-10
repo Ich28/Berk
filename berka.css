@@ -43,7 +43,7 @@
         height: 200px;
     }
 
-    body nav #art {
+    body nav .art {
         border-bottom: solid rgb(68, 0, 0) 2px;
         border-top: solid rgb(68, 0, 0) 2px;
     }
@@ -123,10 +123,14 @@ nav div {
     margin-bottom: 1vw;
 }
 
+#p {
+    align-items: center;
+}
+
 nav h1 {
     font-family: "berserk";
     font-size: 1.8vw;
-    color: white;
+    color: rgb(255, 0, 0);
 }
 
 nav a {
@@ -192,4 +196,8 @@ figcaption {
     font-family: "berserk";
     color: white;
     text-align: center;
+}
+
+#bandeira {
+    height: 30px;
 }

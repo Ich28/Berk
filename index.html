@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berserk</title>
     <link rel="stylesheet" href="index-style.css">
     <link rel="icon" href="berserk-guts-guts-logo-berserk-anime-manga-anime-illustration-guts-11563042852jd33dlmwml.png">
-    <audio loop autoplay>
-        <source src="[Music Video] Guts' Theme - Berserk (128 kbps).mp3" type="audio/mpeg" id="player">
-    </audio>
 </head>
 <body onload="ani()">
     <header id="head">
-        <img src="Berserk_anime_logo.png">
+        <img src="Berserk_anime_logo.png" alt="">
     </header>
-    <nav>
-        <h1>
-            A era da escuridão
-        </h1>
-    </nav>
     <main id="main">
         <div>
             <div class="d1">
@@ -26,72 +18,69 @@
                     PERSONAGENS
                 </h1>
                 <a href="personagens.html">
-                    <img src="BOG-Guts_Group-Book.webp"  id="img1">
+                    <img src="BOG-Guts_Group-Book.webp"  id="img1" alt="">
                 </a>
             </div>
-            <div div class="d2">
+            <div class="d2">
                 <h1>
                     ARTEFATOS
                 </h1>
                 <a href="Artefatos.html">
-                    <img src="69boz5oyaq761.png" id="img2">
+                    <img src="69boz5oyaq761.png" id="img2" alt="">
                 </a>
             </div>
         </div>
         <div>
-            <div div class="d1">
+            <div class="d1">
                 <h1>
                     SOBRE
                 </h1>
                 <a href="sobre.html">
-                    <img src="ba5f07ano3v81.png" id="img3">
+                    <img src="ba5f07ano3v81.png" id="img3" alt="">
                 </a>
             </div>
-            <div div class="d2">
+            <div class="d2">
                 <h1>
-                    INFLUÊNCIAS
+                    REFERÊNCIAS
                 </h1>
                 <a href="inf.html">
-                    <img src="knocxfykn2c01.jpg" id="img4">
+                    <img src="knocxfykn2c01.jpg" id="img4" alt="">
                 </a>            
             </div>
             </div>
-        </div>
     </main>
     <footer id="fot">
-        <a href="index-golden.html" id="behelt">
-            <img src="lc8nskegwug81.gif" id="behelit">
-        </a>
     </footer>
+    <script>
+        function ani() {
+            const hed = document.getElementById("head")
+    
+            hed.style.animationName = "anim"
+            hed.style.animationDuration = "2s"
+            hed.style.animationIterationCount = "1"
+            hed.addEventListener("animationend", ani2)
+            hed.addEventListener("animationend", nav)
+        }
+        function ani2() {
+            window.scrollTo(0, 0)
+            const man = document.getElementById("main")
+            const fot = document.getElementById("fot")
+    
+            man.style.animationName = "ani2"
+            fot.style.animationName = "ani2"
+    
+            man.style.animationDuration = "2s"
+            fot.style.animationDuration = "2s"
+    
+            man.style.animationFillMode = "forwards"
+            fot.style.animationFillMode = "forwards"
+    
+            man.style.animationIterationCount = "1"
+            fot.style.animationIterationCount = "1"
+        }
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0)
+        }
+    </script>
 </body>
-<script>
-    function ani() {
-        const hed = document.getElementById("head")
-
-        hed.style.animationName = "anim"
-        hed.style.animationDuration = "3s"
-        hed.style.animationIterationCount = "1"
-        hed.addEventListener("animationend", ani2)
-    }
-    function ani2() {
-        window.scrollTo(0, 0)
-        const man = document.getElementById("main")
-        const fot = document.getElementById("fot")
-
-        man.style.animationName = "ani2"
-        fot.style.animationName = "ani2"
-
-        man.style.animationDuration = "3s"
-        fot.style.animationDuration = "3s"
-
-        man.style.animationFillMode = "forwards"
-        fot.style.animationFillMode = "forwards"
-
-        man.style.animationIterationCount = "1"
-        fot.style.animationIterationCount = "1"
-    }
-    window.onbeforeunload = function () {
-        window.scrollTo(0, 0)
-    }
-</script>
 </html>

@@ -64,7 +64,7 @@
         font-size: 14px;
     }
 
-    body nav #art {
+    body nav .art {
         border-bottom: solid rgb(68, 0, 0) 2px;
         border-top: solid rgb(68, 0, 0) 2px;
     }
@@ -78,7 +78,7 @@
 header {
     background-color: black;
     text-align: center;
-    width: 100%; 
+    width: 100%;
 }
 
 body {
@@ -111,21 +111,22 @@ nav {
     background-color: black;
     width: 80%;
     border-bottom: solid rgb(68, 0, 0) 2px;
+    margin-bottom: 2%
 }
 
 nav div {
     flex: 1;
-    display: flex;
-    margin-bottom: 1vw;
+    display: block;
+}
+
+#p {
+    align-items: center;
 }
 
 nav h1 {
     font-family: "berserk";
     font-size: 1.8vw;
-    color: white;
-    text-align: center;
-    
-    
+    color: rgb(255, 0, 0);
 }
 
 nav a {
