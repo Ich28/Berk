@@ -172,7 +172,7 @@ main a {
 }
 
 #ga {
-    background-color: rgb(138, 99, 0);
+    background-color: rgba(221, 159, 3, 0.623);
     display: flex;
 }
 
@@ -192,7 +192,7 @@ div p {
 }
 
 #da {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.623);
     display: flex;
 }
 
